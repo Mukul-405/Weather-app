@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .container {
+    background-color: white;
+    height: min-content;
+    width: 400px;
+    border-radius: 12px;
+    padding: 28px;
+  }
+  .search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-box input {
+    width: 84%;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+    background-color: #e6f5fb;
+    padding: 12px 16px;
+    border-radius: 14px;
+  }
+  .search-box input::placeholder {
+    color: black;
+  }
+  .search-box button {
+    height: 46px;
+    width: 46px;
+    background-color: #e6f5fb;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .search-box button:hover {
+    color: #fff;
+    background-color: #ababab;
+  }
+  .weather-body img{
+    width: 60%;
+  }
+  .weather-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+  }
+  .weather-box{
+    margin-block: 20px;
+    text-align: center;
+  }
+  .weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+  }
+  .weather-box .temperature sup{
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+  }
+  .weather-box .discription{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  .humidity, .wind{
+    display: flex;
+    align-items: center;
+  }
+  .weather-details svg{
+    height: 34px;
+    width: 30px;
+  }
+  .weather-details .text{
+    margin-left: 12px;
+  }
+  .text span{
+    font-weight: 700;
+    font-size: 20px;
+  }
